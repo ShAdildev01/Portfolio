@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Security: strict CSP is in the _headers file (applied by Netlify / Cloudflare Pages); this meta tag adds the parts that also work locally -->
+<meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'; connect-src https://formsubmit.co">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#05060d">
+<link rel="icon" type="image/png" href="assets/favicon.png"><link rel="apple-touch-icon" href="assets/logo.png"><meta property="og:title" content="MR ADiL | Front-End Developer · AI Developer"><meta property="og:type" content="website"><meta name="description" content="MR ADiL — Front-End Developer and AI Developer portfolio.">
+<title>MR ADiL | Front-End Developer · AI Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<noscript><p style="padding:40px;text-align:center">Please enable JavaScript to view this portfolio. / برای مشاهده سایت جاوااسکریپت را فعال کنید.</p></noscript>
+<div id="loader"><div><img src="assets/logo.png" alt="" width="96" height="96"><b><span>MR</span> ADiL</b><i></i></div></div>
+<canvas id="bg" aria-hidden="true"></canvas><div id="glow" aria-hidden="true"></div>
+
+<header id="hdr"><div class="wrap">
+ <a class="logo" href="#home" aria-label="MR ADiL"><img src="assets/logo.png" alt="" width="40" height="40"><span class="lt"><b>SH</b> ADiL</span></a>
+ <nav id="nav" aria-label="Main">
+  <a href="#home" class="on" data-fa="خانه">Home</a><a href="#about" data-fa="درباره من">About</a><a href="#projects" data-fa="نمونه کارها">Projects</a><a href="#skills" data-fa="مهارت‌ها">Skills</a><a href="#services" data-fa="خدمات">Services</a><a href="#contact" data-fa="تماس">Contact</a>
+ </nav>
+ <button id="lang" aria-label="Language">EN / فارسی</button>
+ <button id="burger" aria-label="Menu">☰</button>
+</div></header>
+
+<main>
+<section id="home"><div class="wrap hero">
+ <div>
+  <p class="hello" data-fa="سلام دنیا!">HELLO, WORLD!</p>
+  <h1><span class="hi" data-fa="سلام، من">Hi, I'm</span><span class="nm">SH ADiL</span></h1>
+  <p class="role"><span data-fa="توسعه‌دهنده فرانت‌اند">Front-End Developer</span> | <b data-fa="توسعه‌دهنده هوش مصنوعی">AI Developer</b></p>
+  <p class="typed" id="typed" aria-live="off"></p>
+  <p class="d" data-fa="من وب‌سایت‌های مدرن و واکنش‌گرا طراحی و پیاده‌سازی می‌کنم و امکانات هوش مصنوعی را کاوش می‌کنم.">I design and build modern, responsive websites and explore the possibilities of Artificial Intelligence.</p>
+  <div class="cta"><a class="btn" href="#projects"><span data-fa="مشاهده نمونه کارها">View My Projects</span><span class="arr">→</span></a><button class="btn ghost" id="cv" data-fa="دانلود رزومه">Download CV</button></div>
+  <div class="soc">
+   <a href="https://github.com/ShAdildev01" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 00-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 015.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0012 .5z"/></svg></a>
+   <a href="https://t.me/IDmradil" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><svg viewBox="0 0 24 24"><path d="M21.9 3.6L2.8 11c-1.3.5-1.3 1.3-.2 1.6l4.9 1.5 1.9 5.8c.2.6.1.8.7.8.5 0 .7-.2 1-.5l2.4-2.3 4.9 3.6c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.4-1.5zM8.7 13.6l9.4-5.9c.4-.3.8-.1.5.2l-7.8 7-.3 3.3z"/></svg></a>
+   <a href="https://www.instagram.com/mr.adil01__" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3zm5 3.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9zm0 2a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM17.3 6a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/></svg></a>
+   <a href="mailto:shafieullahAdilzad210@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1zm1.5 2L12 12.6 19.5 7zm15.5 2.4l-8 5.6-8-5.6V17h16z"/></svg></a>
+  </div>
+ </div>
+ <div aria-hidden="true">
+  <svg class="lap" viewBox="0 0 520 380"><defs><linearGradient id="sc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b2145"/><stop offset="1" stop-color="#080a16"/></linearGradient><linearGradient id="rim" x1="0" x2="1"><stop offset="0" stop-color="#ff2d46"/><stop offset="1" stop-color="#2f80ff"/></linearGradient><filter id="gl" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter></defs>
+   <ellipse class="orb" cx="260" cy="190" rx="250" ry="105" fill="none" stroke="url(#rim)" stroke-width="2.5" opacity=".75" transform="rotate(-12 260 190)"/>
+   <g transform="translate(90 40)"><rect width="340" height="220" rx="14" fill="#0b0e1e" stroke="url(#rim)" stroke-width="2.5"/><rect x="12" y="12" width="316" height="196" rx="6" fill="url(#sc)"/>
+    <g transform="translate(0 4)"><path filter="url(#gl)" d="M130 72L92 110l38 38M210 72l38 38-38 38M188 62l-36 96" stroke="#ff2d46" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M130 72L92 110l38 38M210 72l38 38-38 38M188 62l-36 96" stroke="#ff4a5f" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <rect x="30" y="28" width="60" height="5" rx="2.5" fill="#2f80ff" opacity=".6"/><rect x="250" y="178" width="60" height="5" rx="2.5" fill="#ff2d46" opacity=".6"/></g>
+   <path d="M60 268h400l-26-16H86z" fill="#151a38" stroke="#2f3a78" stroke-width="2"/><rect x="215" y="268" width="90" height="6" rx="3" fill="#2f3a78"/>
+   <ellipse cx="260" cy="300" rx="190" ry="14" fill="#ff2d46" opacity=".18" filter="url(#gl)"/>
+  </svg>
+ </div>
+</div></section>
+
+<section class="sec" id="about"><div class="wrap about">
+ <figure class="photo rv" id="photo"><div class="ph-in"><div class="pf"><img src="assets/about.webp" alt="MR ADiL working at a neon coding desk" width="879" height="900" loading="lazy"></div>
+  <span class="chipf c1">HTML5</span><span class="chipf c2">React</span><span class="chipf c3">CSS3</span><span class="chipf c4">JS</span></div></figure>
+ <div class="rv">
+  <p class="lab" data-fa="درباره من">ABOUT ME</p>
+  <h2 class="ttl" data-fa="توسعه‌دهنده فرانت‌اند پرشور و علاقه‌مند به هوش مصنوعی">Passionate Front-End Developer &amp; AI Enthusiast</h2>
+  <p data-fa="من دانشجوی علوم کامپیوتر هستم و عاشق تبدیل ایده‌ها به وب‌سایت‌های تعاملی و هوشمند.">I'm a Computer Science student who loves turning ideas into interactive and intelligent digital experiences.</p>
+  <p data-fa="یادگیری فناوری‌های جدید و ساخت راه‌حل‌های خلاقانه برای مسائل واقعی را دوست دارم.">I enjoy learning new technologies and building creative solutions for real-world problems.</p> 
+  <div class="pn ab-cards">
+   <div class="ab"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/></svg></span><div><b data-fa="تحصیلات">Education</b><small data-fa="دانشجوی علوم کامپیوتر">Computer Science Student</small></div></div>
+   <div class="ab"><span class="ico b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/></svg></span><div><b data-fa="تمرکز">Focus</b><small data-fa="توسعه وب و هوش مصنوعی">Web Development &amp; AI</small></div></div>
+   <div class="ab"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4M5 4h12l-2 4 2 4H5"/></svg></span><div><b data-fa="هدف">Goal</b><small data-fa="ساخت پروژه‌های اثرگذار">Build impactful projects</small></div></div>
+  </div>
+  <div class="stats">
+   <div><b class="cnt" data-to="5" data-suf="+">0</b><small data-fa="پروژه">Projects</small></div>
+   <div><b class="cnt" data-to="2" data-suf="+">0</b><small data-fa="فناوری">Technologies</small></div>
+   <div><b class="cnt" data-to="100" data-suf="%">0</b><small data-fa="اشتیاق">Passion</small></div>
+  </div>
+  <a class="btn sm" href="#skills" style="margin-top:22px"><span data-fa="بیشتر بدانید">Learn More</span><span class="arr">→</span></a>
+ </div>
+</div></section>
+
+<section class="sec" id="projects"><div class="wrap">
+ <div class="rv"><p class="lab" data-fa="نمونه کارهای من">MY PROJECTS</p>
+ <h2 class="ttl" data-fa="نمایش کارهای من">Showcasing My Work</h2>
+ <p class="sub" data-fa="مجموعه‌ای از پروژه‌های واقعی. روی هر نمونه کلیک کنید تا به‌صورت یک وب‌سایت کامل و تعاملی باز شود.">A collection of real projects. Click any project to open it as a full, interactive website.</p></div>
+ <div class="filters rv" role="tablist">
+  <button class="on" data-f="all" data-fa="همه">All</button><button data-f="web" data-fa="توسعه وب">Web Dev</button><button data-f="ai" data-fa="هوش مصنوعی">AI Projects</button><button data-f="dash" data-fa="داشبوردها">Dashboards</button><button data-f="exp" data-fa="آزمایشی">Experiments</button>
+ </div>
+ <div class="pg">
+  <article class="pc pn rv" data-cat="web dash exp" data-demo="0"><div class="im" data-open="Open live demo" data-fa-open="باز کردن نمونه زنده"><img src="assets/projects/project-1.webp" width="1100" height="660" alt="Cyber Security Threat Monitoring Center" loading="lazy"></div><div class="pb"><span class="tg o" data-fa="در حال توسعه">In Progress</span><h3 data-fa="مرکز پایش تهدیدهای امنیت سایبری">Cyber Security Threat Center</h3><p data-fa="داشبورد زنده پایش تهدیدها با نقشه جهانی، حمله‌های لحظه‌ای و وضعیت سیستم.">Live threat monitoring with a global map, real-time attacks and system status.</p><div class="pl"><button data-open="0" data-fa="نمونه زنده ↗">Live Demo ↗</button><a href="https://github.com/ShAdildev01" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></article>
+  <article class="pc pn rv" data-cat="web dash" data-demo="1"><div class="im" data-open="Open live demo"><img src="assets/projects/project-2.webp" width="1100" height="660" alt="Smart Progress Dashboard" loading="lazy"></div><div class="pb"><span class="tg g" data-fa="تکمیل شده">Completed</span><h3 data-fa="داشبورد پیشرفت هوشمند">Smart Progress Dashboard</h3><p data-fa="پیگیری وظایف و امتیازها با نمودار عملکرد، مهارت‌ها و هدف روزانه.">Task and score tracking with performance charts, skill rings and daily goals.</p><div class="pl"><button data-open="1" data-fa="نمونه زنده ↗">Live Demo ↗</button><a href="https://github.com/ShAdildev01" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></article>
+  <article class="pc pn rv" data-cat="web dash" data-demo="2"><div class="im" data-open="Open live demo"><img src="assets/projects/project-3.webp" width="1100" height="660" alt="Admin Security Dashboard" loading="lazy"></div><div class="pb"><span class="tg p" data-fa="نمونه اولیه">Prototype</span><h3 data-fa="داشبورد مدیریت امنیت">Admin Security Dashboard</h3><p data-fa="پنل مدیریت با نقشه تهدید، ترافیک شبکه و اقدام‌های سریع.">Admin panel with threat map, network traffic and one-click quick actions.</p><div class="pl"><button data-open="2" data-fa="نمونه زنده ↗">Live Demo ↗</button><a href="https://github.com/ShAdildev01" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></article>
+ </div>
+ <p class="empty" id="empty" data-fa="هنوز پروژه‌ای در این دسته‌بندی نیست.">No projects in this category yet.</p>
+</div></section>
+
+<section class="sec" id="skills"><div class="wrap">
+ <div class="rv"><p class="lab" data-fa="مهارت‌های من">MY SKILLS</p><h2 class="ttl" data-fa="فناوری‌ها و ابزارها">Technologies &amp; Tools</h2><p class="sub" data-fa="جعبه‌ابزاری از فناوری‌هایی که با آن‌ها کار می‌کنم.">A toolkit of technologies I work with.</p></div>
+ <div class="sk" id="skg"></div>
+</div></section>
+
+<section class="sec" id="services"><div class="wrap">
+ <div class="rv"><p class="lab" data-fa="خدمات من">MY SERVICES</p><h2 class="ttl" data-fa="چه کارهایی می‌توانم انجام دهم">What I Can Do</h2><p class="sub" data-fa="خدمات حرفه‌ای برای ایده‌های شما.">Professional services for your ideas.</p></div>
+ <div class="sv rv">
+  <ul class="pn sl">
+   <li data-fa="طراحی سایت واکنش‌گرا">Responsive Website Development</li><li data-fa="توسعه HTML و CSS">HTML &amp; CSS Development</li>
+   <li data-fa="طراحی لندینگ پیج">Landing Page Design</li><li data-fa="بازطراحی وب‌سایت">Website Redesign</li>
+   <li data-fa="ساخت سایت نمونه‌کار">Portfolio Website Development</li><li data-fa="رفع باگ وب‌سایت">Website Bug Fixing</li>
+   <li data-fa="طراحی رابط داشبورد">Dashboard UI Design</li><li data-fa="نمونه‌سازی با کمک هوش مصنوعی">AI-Assisted Prototyping</li>
+  </ul>
+  <div class="ill" aria-hidden="true"><svg viewBox="0 0 420 260"><defs><linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#2f80ff"/><stop offset="1" stop-color="#1fc8ff"/></linearGradient></defs>
+   <g transform="translate(40 50) skewY(-8)"><rect width="190" height="120" rx="10" fill="#0d1230" stroke="url(#g2)" stroke-width="2"/><rect x="14" y="16" width="70" height="8" rx="4" fill="#2f80ff"/><rect x="14" y="36" width="120" height="6" rx="3" fill="#2a3160"/><rect x="14" y="50" width="100" height="6" rx="3" fill="#2a3160"/><rect x="14" y="76" width="50" height="26" rx="6" fill="#ff2d46"/></g>
+   <g transform="translate(190 90) skewY(-8)"><rect width="190" height="120" rx="10" fill="#0d1230" stroke="#ff2d46" stroke-width="2"/><path d="M70 40L48 62l22 22M120 40l22 22-22 22M104 34l-18 56" stroke="#ff4a5f" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+   <a class="btn" href="#contact" style="font-size:.88rem"><span data-fa="بیایید با هم کار کنیم">Let's Work Together</span><span class="arr">→</span></a></div>
+ </div>
+</div></section>
+
+<section class="sec" id="resume"><div class="wrap">
+ <div class="rv"><p class="lab" data-fa="رزومه من">MY RESUME</p><h2 class="ttl" data-fa="مسیر حرفه‌ای">Professional Journey</h2><p class="sub" data-fa="تحصیلات، مهارت‌ها و تجربه‌های من.">My education, skills and experience.</p></div>
+ <div class="rs rv">
+  <div class="pn rl">
+   <div class="ab"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/></svg></span><div><b data-fa="تحصیلات">Education</b><small data-fa="دانشجوی علوم کامپیوتر">Computer Science Student</small></div></div>
+   <div class="ab"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V4h6v3"/></svg></span><div><b data-fa="تجربه">Experience</b><small data-fa="پروژه‌های فریلنس و شخصی">Freelance &amp; Personal Projects</small></div></div>
+   <div class="ab"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l1 4h-8zM6 7h12l1 14H5z"/></svg></span><div><b data-fa="مهارت‌ها">Skills</b><small data-fa="فرانت‌اند، هوش مصنوعی، حل مسئله">Front-End, AI, Problem Solving</small></div></div>
+  </div>
+  <div class="pn tl"><ol>
+   <li><b>2024 – <span data-fa="اکنون">Present</span></b><small data-fa="دانشجوی علوم کامپیوتر">Computer Science Student</small></li>
+   <li><b>2023 – 2024</b><small data-fa="یادگیری و ساخت پروژه‌ها">Learning &amp; Building Projects</small></li>
+   <li><b>2022 – 2023</b><small data-fa="کاوش در توسعه وب">Exploring Web Development</small></li>
+  </ol></div>
+ </div>
+</div></section>
+
+<section class="sec" id="contact"><div class="wrap">
+ <div class="rv"><p class="lab" data-fa="تماس با من">GET IN TOUCH</p><h2 class="ttl" data-fa="بیایید با هم کار کنیم">Let's Work Together</h2><p class="sub" data-fa="ایده یا فرصتی دارید؟ همیشه آماده همکاری هستم.">Have a project idea or an opportunity? I'm always interested in collaborating.</p></div>
+ <div class="ct rv">
+  <div class="cl">
+   <a class="pn cc" href="https://github.com/ShAdildev01" target="_blank" rel="noopener noreferrer"><svg class="f" viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 00-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 015.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0012 .5z"/></svg><b>GitHub</b><small>ShAdildev01</small></a>
+   <a class="pn cc" href="mailto:shafieullahAdilzad210@gmail.com"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><b data-fa="ایمیل">Email</b><small>shafieullahAdilzad210@gmail.com</small></a>
+   <a class="pn cc" href="https://t.me/IDmradil" target="_blank" rel="noopener noreferrer"><svg class="f" viewBox="0 0 24 24"><path d="M21.9 3.6L2.8 11c-1.3.5-1.3 1.3-.2 1.6l4.9 1.5 1.9 5.8c.2.6.1.8.7.8.5 0 .7-.2 1-.5l2.4-2.3 4.9 3.6c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.4-1.5zM8.7 13.6l9.4-5.9c.4-.3.8-.1.5.2l-7.8 7-.3 3.3z"/></svg><b data-fa="تلگرام">Telegram</b><small>@IDmradil</small></a>
+   <a class="pn cc" href="https://www.instagram.com/mr.adil01__" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="#fff"/></svg><b data-fa="اینستاگرام">Instagram</b><small>mr.adil01__</small></a>
+  </div>
+  <form class="pn fm" id="cf" novalidate autocomplete="on">
+   <input name="name" type="text" maxlength="80" required placeholder="Your Name" data-fa-ph="نام شما" autocomplete="name">
+   <input name="email" type="email" maxlength="120" required placeholder="Your Email" data-fa-ph="ایمیل شما" autocomplete="email" dir="ltr">
+   <textarea name="message" maxlength="2000" required placeholder="Your Message" data-fa-ph="پیام شما"></textarea>
+   <input class="hp" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
+   <button class="btn" type="submit" id="sbtn"><span data-fa="ارسال پیام">Send Message</span><span class="arr">→</span></button>
+   <p class="fs" id="fs" role="status"></p>
+  </form>
+ </div>
+</div></section>
+</main>
+<footer><div class="wrap"><a class="logo" href="#home"><img src="assets/logo.png" alt="" width="34" height="34"><span class="lt"><b>MR</b> ADiL</span></a><nav><a href="#home" data-fa="خانه">Home</a><a href="#about" data-fa="درباره من">About</a><a href="#projects" data-fa="نمونه کارها">Projects</a><a href="#skills" data-fa="مهارت‌ها">Skills</a><a href="#services" data-fa="خدمات">Services</a><a href="#contact" data-fa="تماس">Contact</a></nav><small data-fa="© ۲۰۲۶ MR ADiL. تمام حقوق محفوظ است.">© 2026 MR ADiL. All Rights Reserved.</small></div></footer>
+
+<div class="demo" id="demo" hidden role="dialog" aria-modal="true" aria-label="Project demo">
+ <div class="dbar"><button class="btn ghost sm" id="dback"></button><span class="dt" id="dtitle"></span><span class="dm" id="dmode"></span><button id="dlang" class="btn sm" style="padding:6px 14px">EN / فارسی</button></div>
+ <div id="dbody"></div>
+</div>
+<div id="toasts" aria-live="polite"></div>
+
+<script src="js/app.js" defer></script>
+</body>
+</html>
